@@ -1,0 +1,337 @@
+	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+	    NOTES FROM FOSSHOST ALL HANDS MEETINGS AUG 2021
+
+			      Corwin Brust
+	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+Table of Contents
+─────────────────
+
+1. Overall Status
+.. 1. Additional Colo/Deployments
+2. Call to order (14:15)
+.. 1. Thanks for joining
+.. 2. Good community feedback (as seen in chat)
+.. 3. Cloud Mercado feedback is out
+..... 1. Being compared to paid platforms (while we're on a budget)
+..... 2. Not embarrassing; in-flight improvements we're considered
+.. 4. New volunteers
+3. TODOs
+.. 1. Update (or remove) WIKI
+..... 1. Corwin: focus on standalone documents in git
+..... 2. Alyx: automation/federation
+..... 3. Corwin: process gets stale/ignored fast
+..... 4. Alyx: balance of expectations vs "not too worried about it"
+..... 5. TODO research/suggest approach (Alyx)
+.. 2. RL - dedicated infra via equinix metal
+.. 3. Expansion plans
+..... 1. UT - updating Debian (bullseye)
+..... 2. Hive - need UEFI keys?
+..... 3. No work has been done on the London location
+..... 4. 12 new proxmox nodes
+4. AARCH64
+.. 1. aquired some 240gb SATA SSD
+.. 2. Commercial Cloud Provider Support
+..... 1. Oracle has launched a program to support FOSS
+..... 2. AWS has given us USD 5k credit & USD 3K gift card to amazon.com
+.. 3. FOSS Project Conservation Updates
+..... 1. part of our original orginal focus
+..... 2. give projects org (as well as tech) infrastructure/support
+..... 3. there are similar projects but nothing we think is "quite us"
+..... 4. working title for the work is now "FOSSBANK"
+..... 5. at the prototype stage
+..... 6. flavor of flow/products
+5. Chat Channels
+.. 1. We have quite a few right now
+.. 2. VC text vs VC text private is especially confusing
+..... 1. generally use priv when chatting in a volunteers only
+..... 2. renamed to include "volunteers" in the name
+.. 3. some roadmap opportunities with
+6. Meeting ended (16:00)
+
+
+      These are the full and complete minutes recording the Aug
+      2021 FOSSHOST team ("All Hands") meeting. The overall status
+      section was added after the meeting.  There may be errors or
+      omissions due e.g, to digression; however, these notes were
+      not (otherwise) redacted/trimmed.  (Corwin)
+<file:fh-banner.png>
+
+
+1 Overall Status
+════════════════
+
+  • We've added a number of new volunteers so far in 2021.
+
+    This was a first or second team meeting for several; we did quick
+    round of self-introductions from new-volunteers.
+
+  • The network is also growing.
+
+    The next section lists our pending and in-flight deployments of into
+    new/expanded CoLo.
+
+  • Progress is slow on documentation/policy/etc work.
+
+    Today we discussed the need to make good use of volunteers time
+    creating documentation by having specific "documentation projects"
+    prioritized and with questions and in idea of the time commitments
+    involved for SMEs to plan to better support that type of work
+    without disrupting other important work.
+
+  • FOSSHOST will provide volunteers with headsets
+
+    If you need an headset, e.g. to participate in the team call let
+    Hope or another lead know. This doesn't cost cash thanks to
+    gift-card from Amazon!
+
+
+1.1 Additional Colo/Deployments
+───────────────────────────────
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Location  Status                                          
+   Utah      finish OS updates; deploy AARCH64 (hammy, team) 
+   Boston    finish OS updates; deploy AARCH64 (hammy/team)  
+   London    reqs FH staff onsite (thomas, deploy switch)    
+   Canada    Setup pending, awaiting staff-time/priority     
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+2 Call to order (14:15)
+═══════════════════════
+
+2.1 Thanks for joining
+──────────────────────
+
+
+2.2 Good community feedback (as seen in chat)
+─────────────────────────────────────────────
+
+
+2.3 Cloud Mercado feedback is out
+─────────────────────────────────
+
+2.3.1 Being compared to paid platforms (while we're on a budget)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+2.3.2 Not embarrassing; in-flight improvements we're considered
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+2.4 New volunteers
+──────────────────
+
+
+3 TODOs
+═══════
+
+3.1 Update (or remove) WIKI
+───────────────────────────
+
+3.1.1 Corwin: focus on standalone documents in git
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.1.2 Alyx: automation/federation
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.1.3 Corwin: process gets stale/ignored fast
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.1.4 Alyx: balance of expectations vs "not too worried about it"
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.1.5 TODO research/suggest approach (Alyx)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  • get alignment from Nate/Hammy&Corwin/Hope or Thomas
+
+
+3.2 RL - dedicated infra via equinix metal
+──────────────────────────────────────────
+
+  • project needed complex infra neededing dedicated infra
+  • due to requirements around protecting signing-certs for gov use
+  • not using due to need for an additional "jump-box"
+  • this also needs a (second) dedicated host
+  • nik a reached out to RL last week,
+    • no response as yet
+    • we note they are also a busy volunteer driven project
+    • somewhat expecting they will release the unused server
+    • we haz a sad
+    • don't think we will be able to purchase the second node
+    • this would be 50% of/would double vs current monthly co-lo costs
+  • assigned machine is huge but planned to be used just for signing
+  • 
+
+
+3.3 Expansion plans
+───────────────────
+
+3.3.1 UT - updating Debian (bullseye)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.3.2 Hive - need UEFI keys?
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+◊ 3.3.2.1 hammy didn't have email confirming USB receipt
+
+
+◊ 3.3.2.2 Thomas will forward
+
+
+3.3.3 No work has been done on the London location
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+3.3.4 12 new proxmox nodes
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  updates, install proxmox, recommend logging into each node This to
+  check.  Thomas can show you how to check, review what to check.
+
+
+◊ 3.3.4.1 Thomas to document list of things to check?
+
+
+◊ 3.3.4.2 Hope to create a rotation (nodes per week?)
+
+
+◊ 3.3.4.3 This could be a good "test" for our new approach to documentation
+
+  ◊ 3.3.4.3.1 leaders to take "scoping and planning" offline
+
+
+  ◊ 3.3.4.3.2 let tech teammembers know the specific questions/time commitments
+
+
+4 AARCH64
+═════════
+
+4.1 aquired some 240gb SATA SSD
+───────────────────────────────
+
+  • purchased caddies from amazon (using credit we have)
+  • thomas will stage send to hammy
+  • targeting BOS for initial install of addl SSD for each node
+  • future options
+    • repurpose/add a node to AARCH64 to be a "cloud disk" host
+    • could purchase riser card, perhaps NVMe capable (experimental!)
+    • (jonathon) Backblaze might donate some hardware :thinking:
+  • (nik) do we have data center support?
+  • (thomas) the are pulled from the floor but we can get support
+
+
+4.2 Commercial Cloud Provider Support
+─────────────────────────────────────
+
+4.2.1 Oracle has launched a program to support FOSS
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+◊ 4.2.1.1 Thomas is reaching out to see if they can donate credits to us
+
+
+4.2.2 AWS has given us USD 5k credit & USD 3K gift card to amazon.com
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+4.3 FOSS Project Conservation Updates
+─────────────────────────────────────
+
+4.3.1 part of our original orginal focus
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+4.3.2 give projects org (as well as tech) infrastructure/support
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+4.3.3 there are similar projects but nothing we think is "quite us"
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+◊ 4.3.3.1 SPI - Software In the Public Interest
+
+
+◊ 4.3.3.2 Open Collective
+
+
+◊ 4.3.3.3 GNU
+
+
+4.3.4 working title for the work is now "FOSSBANK"
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+4.3.5 at the prototype stage
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+4.3.6 flavor of flow/products
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+◊ 4.3.6.1 products apply (completely sep from FH)
+
+
+◊ 4.3.6.2 similar to credit check
+
+  ◊ 4.3.6.2.1 we apply a formulaic scoring system ("Secret Sauce"?)
+
+
+  ◊ 4.3.6.2.2 provide a history and profile
+
+
+  ◊ 4.3.6.2.3 option to make your records public to meet transparency goals
+
+
+◊ 4.3.6.3 once approved projects receive requested funds as loans
+
+  ◊ 4.3.6.3.1 "virtual accounts", not actually providing a true "bank" service
+
+
+◊ 4.3.6.4 access to legal and other professional services
+
+
+◊ 4.3.6.5 acceptable to use this money to "pay yourself"
+
+  ◊ 4.3.6.5.1 salaries
+
+
+  ◊ 4.3.6.5.2 "outside" professional and other expenses
+
+
+◊ 4.3.6.6 Very new/WIP still; we'll share further updates as things get "closer"
+
+  **
+
+
+5 Chat Channels
+═══════════════
+
+5.1 We have quite a few right now
+─────────────────────────────────
+
+
+5.2 VC text vs VC text private is especially confusing
+──────────────────────────────────────────────────────
+
+5.2.1 generally use priv when chatting in a volunteers only
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+5.2.2 renamed to include "volunteers" in the name
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+
+5.3 some roadmap opportunities with
+───────────────────────────────────
+
+
+6 Meeting ended (16:00)
+═══════════════════════

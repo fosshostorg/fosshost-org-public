@@ -1,0 +1,132 @@
+#+TITLE: Notes from FOSSHOST all hands meetings Aug 2021
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+#+BEGIN_QUOTE
+These are the full and complete minutes recording the Aug 2021
+FOSSHOST team ("All Hands") meeting. The overall status section was
+added after the meeting.  There may be errors or omissions due e.g, to
+digression; however, these notes were not (otherwise)
+redacted/trimmed.  (Corwin)
+#+END_QUOTE
+[[file:fh-banner.png]]
+* Overall Status
+
+  - We've added a number of new volunteers so far in 2021.
+
+    This was a first or second team meeting for several; we
+    did quick round of self-introductions from new-volunteers.
+
+  - The network is also growing.
+
+    The next section lists our pending and in-flight deployments of
+    into new/expanded CoLo.
+
+  - Progress is slow on documentation/policy/etc work.
+
+    Today we discussed the need to make good use of volunteers time
+    creating documentation by having specific "documentation projects"
+    prioritized and with questions and in idea of the time commitments
+    involved for SMEs to plan to better support that type of work
+    without disrupting other important work.
+
+  - FOSSHOST will provide volunteers with headsets
+
+    If you need an headset, e.g. to participate in the team call let
+    Hope or another lead know. This doesn't cost cash thanks to
+    gift-card from Amazon!
+
+** Additional Colo/Deployments
+ | Location | Status                                          |
+ | Utah     | finish OS updates; deploy AARCH64 (hammy, team) |
+ | Boston   | finish OS updates; deploy AARCH64 (hammy/team)  |
+ | London   | reqs FH staff onsite (thomas, deploy switch)    |
+ | Canada   | Setup pending, awaiting staff-time/priority     |
+
+* Call to order (14:15)
+** Thanks for joining
+** Good community feedback (as seen in chat)
+** Cloud Mercado feedback is out
+*** Being compared to paid platforms (while we're on a budget)
+*** Not embarrassing; in-flight improvements we're considered
+** New volunteers
+* TODOs
+** Update (or remove) WIKI
+*** Corwin: focus on standalone documents in git
+*** Alyx: automation/federation
+*** Corwin: process gets stale/ignored fast
+*** Alyx: balance of expectations vs "not too worried about it"
+*** TODO research/suggest approach (Alyx)
+    - get alignment from Nate/Hammy&Corwin/Hope or Thomas
+** RL - dedicated infra via equinix metal
+    - project needed complex infra neededing dedicated infra
+    - due to requirements around protecting signing-certs for gov use
+    - not using due to need for an additional "jump-box"
+    - this also needs a (second) dedicated host
+    - nik a reached out to RL last week,
+      - no response as yet
+      - we note they are also a busy volunteer driven project
+      - somewhat expecting they will release the unused server
+      - we haz a sad
+      - don't think we will be able to purchase the second node
+      - this would be 50% of/would double vs current monthly co-lo costs
+    - assigned machine is huge but planned to be used just for signing
+    -
+** Expansion plans
+*** UT - updating Debian (bullseye)
+*** Hive - need UEFI keys?
+**** hammy didn't have email confirming USB receipt
+**** Thomas will forward
+*** No work has been done on the London location
+*** 12 new proxmox nodes
+    updates, install proxmox, recommend logging into each node
+    This to check.  Thomas can show you how to check, review what to check.
+**** Thomas to document list of things to check?
+**** Hope to create a rotation (nodes per week?)
+**** This could be a good "test" for our new approach to documentation
+***** leaders to take "scoping and planning" offline
+***** let tech teammembers know the specific questions/time commitments
+* AARCH64
+** aquired some 240gb SATA SSD
+   - purchased caddies from amazon (using credit we have)
+   - thomas will stage send to hammy
+   - targeting BOS for initial install of addl SSD for each node
+   - future options
+     - repurpose/add a node to AARCH64 to be a "cloud disk" host
+     - could purchase riser card, perhaps NVMe capable (experimental!)
+     - (jonathon) Backblaze might donate some hardware :thinking:
+   - (nik) do we have data center support?
+   - (thomas) the are pulled from the floor but we can get support
+** Commercial Cloud Provider Support
+*** Oracle has launched a program to support FOSS
+**** Thomas is reaching out to see if they can donate credits to us
+*** AWS has given us USD 5k credit & USD 3K gift card to amazon.com
+** FOSS Project Conservation Updates
+*** part of our original orginal focus
+*** give projects org (as well as tech) infrastructure/support
+*** there are similar projects but nothing we think is "quite us"
+**** SPI - Software In the Public Interest
+**** Open Collective
+**** GNU
+*** working title for the work is now "FOSSBANK"
+*** at the prototype stage
+*** flavor of flow/products
+**** products apply (completely sep from FH)
+**** similar to credit check
+***** we apply a formulaic scoring system ("Secret Sauce"?)
+***** provide a history and profile
+***** option to make your records public to meet transparency goals
+**** once approved projects receive requested funds as loans
+***** "virtual accounts", not actually providing a true "bank" service
+**** access to legal and other professional services
+**** acceptable to use this money to "pay yourself"
+***** salaries
+***** "outside" professional and other expenses
+**** Very new/WIP still; we'll share further updates as things get "closer"
+**
+* Chat Channels
+** We have quite a few right now
+** VC text vs VC text private is especially confusing
+*** generally use priv when chatting in a volunteers only
+*** renamed to include "volunteers" in the name
+** some roadmap opportunities with
+* Meeting ended (16:00)

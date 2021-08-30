@@ -1,0 +1,261 @@
+% Created 2021-08-29 Sun 20:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Corwin Brust}
+\date{\today}
+\title{Notes from FOSSHOST all hands meetings Aug 2021}
+\hypersetup{
+ pdfauthor={Corwin Brust},
+ pdftitle={Notes from FOSSHOST all hands meetings Aug 2021},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.4.2)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{quote}
+These are the full and complete minutes recording the Aug 2021
+FOSSHOST team ("All Hands") meeting. The overall status section was
+added after the meeting.  There may be errors or omissions due e.g, to
+digression; however, these notes were not (otherwise)
+redacted/trimmed.  (Corwin)
+\end{quote}
+\begin{center}
+\includegraphics[width=.9\linewidth]{fh-banner.png}
+\end{center}
+\section{Overall Status}
+\label{sec:org3a9b655}
+
+\begin{itemize}
+\item We've added a number of new volunteers so far in 2021.
+
+This was a first or second team meeting for several; we
+did quick round of self-introductions from new-volunteers.
+
+\item The network is also growing.
+
+The next section lists our pending and in-flight deployments of
+into new/expanded CoLo.
+
+\item Progress is slow on documentation/policy/etc work.
+
+Today we discussed the need to make good use of volunteers time
+creating documentation by having specific "documentation projects"
+prioritized and with questions and in idea of the time commitments
+involved for SMEs to plan to better support that type of work
+without disrupting other important work.
+
+\item FOSSHOST will provide volunteers with headsets
+
+If you need an headset, e.g. to participate in the team call let
+Hope or another lead know. This doesn't cost cash thanks to
+gift-card from Amazon!
+\end{itemize}
+
+\subsection{Additional Colo/Deployments}
+\label{sec:org817e9cb}
+\begin{center}
+\begin{tabular}{ll}
+Location & Status\\
+Utah & finish OS updates; deploy AARCH64 (hammy, team)\\
+Boston & finish OS updates; deploy AARCH64 (hammy/team)\\
+London & reqs FH staff onsite (thomas, deploy switch)\\
+Canada & Setup pending, awaiting staff-time/priority\\
+\end{tabular}
+\end{center}
+
+\section{Call to order (14:15)}
+\label{sec:org6af6758}
+\subsection{Thanks for joining}
+\label{sec:org787a882}
+\subsection{Good community feedback (as seen in chat)}
+\label{sec:org0604b51}
+\subsection{Cloud Mercado feedback is out}
+\label{sec:org5e835a8}
+\subsubsection{Being compared to paid platforms (while we're on a budget)}
+\label{sec:org8f9ff6a}
+\subsubsection{Not embarrassing; in-flight improvements we're considered}
+\label{sec:org92bcc98}
+\subsection{New volunteers}
+\label{sec:org816b339}
+\section{TODOs}
+\label{sec:org7baa21d}
+\subsection{Update (or remove) WIKI}
+\label{sec:orge015502}
+\subsubsection{Corwin: focus on standalone documents in git}
+\label{sec:org9d24136}
+\subsubsection{Alyx: automation/federation}
+\label{sec:orgfe34016}
+\subsubsection{Corwin: process gets stale/ignored fast}
+\label{sec:org85b3b26}
+\subsubsection{Alyx: balance of expectations vs "not too worried about it"}
+\label{sec:org282dbaa}
+\subsubsection{{\bfseries\sffamily TODO} research/suggest approach (Alyx)}
+\label{sec:org4a0f003}
+\begin{itemize}
+\item get alignment from Nate/Hammy\&Corwin/Hope or Thomas
+\end{itemize}
+\subsection{RL - dedicated infra via equinix metal}
+\label{sec:org68576db}
+\begin{itemize}
+\item project needed complex infra neededing dedicated infra
+\item due to requirements around protecting signing-certs for gov use
+\item not using due to need for an additional "jump-box"
+\item this also needs a (second) dedicated host
+\item nik a reached out to RL last week,
+\begin{itemize}
+\item no response as yet
+\item we note they are also a busy volunteer driven project
+\item somewhat expecting they will release the unused server
+\item we haz a sad
+\item don't think we will be able to purchase the second node
+\item this would be 50\% of/would double vs current monthly co-lo costs
+\end{itemize}
+\item assigned machine is huge but planned to be used just for signing
+\item 
+\end{itemize}
+\subsection{Expansion plans}
+\label{sec:org6f5d13a}
+\subsubsection{UT - updating Debian (bullseye)}
+\label{sec:org4576b07}
+\subsubsection{Hive - need UEFI keys?}
+\label{sec:org26e49f2}
+\begin{enumerate}
+\item hammy didn't have email confirming USB receipt
+\label{sec:org03bafa0}
+\item Thomas will forward
+\label{sec:orgb8b1ee1}
+\end{enumerate}
+\subsubsection{No work has been done on the London location}
+\label{sec:org5a68f54}
+\subsubsection{12 new proxmox nodes}
+\label{sec:org0f09bef}
+updates, install proxmox, recommend logging into each node
+This to check.  Thomas can show you how to check, review what to check.
+\begin{enumerate}
+\item Thomas to document list of things to check?
+\label{sec:orgea93c29}
+\item Hope to create a rotation (nodes per week?)
+\label{sec:org6fc42d5}
+\item This could be a good "test" for our new approach to documentation
+\label{sec:orgb249e35}
+\begin{enumerate}
+\item leaders to take "scoping and planning" offline
+\label{sec:org33575fa}
+\item let tech teammembers know the specific questions/time commitments
+\label{sec:orga2b0b20}
+\end{enumerate}
+\end{enumerate}
+\section{AARCH64}
+\label{sec:org773bd8e}
+\subsection{aquired some 240gb SATA SSD}
+\label{sec:orgc1ec28e}
+\begin{itemize}
+\item purchased caddies from amazon (using credit we have)
+\item thomas will stage send to hammy
+\item targeting BOS for initial install of addl SSD for each node
+\item future options
+\begin{itemize}
+\item repurpose/add a node to AARCH64 to be a "cloud disk" host
+\item could purchase riser card, perhaps NVMe capable (experimental!)
+\item (jonathon) Backblaze might donate some hardware :thinking:
+\end{itemize}
+\item (nik) do we have data center support?
+\item (thomas) the are pulled from the floor but we can get support
+\end{itemize}
+\subsection{Commercial Cloud Provider Support}
+\label{sec:org9c22d52}
+\subsubsection{Oracle has launched a program to support FOSS}
+\label{sec:org410ec91}
+\begin{enumerate}
+\item Thomas is reaching out to see if they can donate credits to us
+\label{sec:orga20607e}
+\end{enumerate}
+\subsubsection{AWS has given us USD 5k credit \& USD 3K gift card to amazon.com}
+\label{sec:org84a2573}
+\subsection{FOSS Project Conservation Updates}
+\label{sec:org63a597c}
+\subsubsection{part of our original orginal focus}
+\label{sec:org76f37c6}
+\subsubsection{give projects org (as well as tech) infrastructure/support}
+\label{sec:orgc1693e7}
+\subsubsection{there are similar projects but nothing we think is "quite us"}
+\label{sec:org1e718a7}
+\begin{enumerate}
+\item SPI - Software In the Public Interest
+\label{sec:org3f88b13}
+\item Open Collective
+\label{sec:org22c9cd2}
+\item GNU
+\label{sec:org04ee509}
+\end{enumerate}
+\subsubsection{working title for the work is now "FOSSBANK"}
+\label{sec:orgca17b3b}
+\subsubsection{at the prototype stage}
+\label{sec:orgf97606d}
+\subsubsection{flavor of flow/products}
+\label{sec:org37bbf22}
+\begin{enumerate}
+\item products apply (completely sep from FH)
+\label{sec:orgf322caa}
+\item similar to credit check
+\label{sec:org4f5fb4c}
+\begin{enumerate}
+\item we apply a formulaic scoring system ("Secret Sauce"?)
+\label{sec:orgf012cd7}
+\item provide a history and profile
+\label{sec:orga4959bf}
+\item option to make your records public to meet transparency goals
+\label{sec:orgec438b0}
+\end{enumerate}
+\item once approved projects receive requested funds as loans
+\label{sec:org2fc5ba4}
+\begin{enumerate}
+\item "virtual accounts", not actually providing a true "bank" service
+\label{sec:orgb90c44b}
+\end{enumerate}
+\item access to legal and other professional services
+\label{sec:org084d1b5}
+\item acceptable to use this money to "pay yourself"
+\label{sec:org7a6eefe}
+\begin{enumerate}
+\item salaries
+\label{sec:org6529920}
+\item "outside" professional and other expenses
+\label{sec:orgc3c88e7}
+\end{enumerate}
+\item Very new/WIP still; we'll share further updates as things get "closer"
+\label{sec:orgbeccf3b}
+**
+\end{enumerate}
+\section{Chat Channels}
+\label{sec:orgbca646e}
+\subsection{We have quite a few right now}
+\label{sec:org74ab0f9}
+\subsection{VC text vs VC text private is especially confusing}
+\label{sec:orge426c9f}
+\subsubsection{generally use priv when chatting in a volunteers only}
+\label{sec:orge3cf142}
+\subsubsection{renamed to include "volunteers" in the name}
+\label{sec:orgabc7052}
+\subsection{some roadmap opportunities with}
+\label{sec:org6c0ba30}
+\section{Meeting ended (16:00)}
+\label{sec:orgb26a5c5}
+\end{document}
